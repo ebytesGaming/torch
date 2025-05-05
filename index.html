@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Torch Bot - Major Outage</title>
+  <link rel="icon" href="https://images-ext-1.discordapp.net/external/Lyyfp0q8AwfaHk8gCeSqEBq_kutpaghNMju1eLeZx3M/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/1216055771691745362/dd1ee29823bed6d849fbe9fd24a78a48.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .logo {
+      width: 140px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #ff3c3c;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff3c3c;
+      text-shadow: 0 0 15px #ff3c3c;
+      margin-bottom: 10px;
+    }
+
+    .flashing-text {
+      font-size: 1.4rem;
+      color: #ff3c3c;
+      animation: flash 1s infinite alternate;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .emoji {
+      font-size: 1.4rem;
+      animation: flash 1s infinite alternate;
+    }
+
+    @keyframes flash {
+      0% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 15px 20px;
+      color: #ccc;
+    }
+
+    .discord-button {
+      margin-top: 20px;
+      background: #ff3c3c;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 10px #ff3c3c;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .discord-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff3c3c;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .flashing-text {
+        font-size: 1.1rem;
+      }
+
+      .logo {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://images-ext-1.discordapp.net/external/Lyyfp0q8AwfaHk8gCeSqEBq_kutpaghNMju1eLeZx3M/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/1216055771691745362/dd1ee29823bed6d849fbe9fd24a78a48.png" alt="Torch Bot Logo" class="logo" />
+
+  <h1>Torch Bot is Currently Down</h1>
+
+  <div class="flashing-text">
+    <span class="emoji">⚠️</span>
+    MAJOR OUTAGE
+    <span class="emoji">⚠️</span>
+  </div>
+
+  <p>We're experiencing a <span class="highlight">major outage</span> affecting key features of the Torch bot.</p>
+  <p>Our team is actively working to resolve the issue. Please check back soon or follow updates in our Discord server.</p>
+
+  <a class="discord-button" href="https://discord.gg/YOURSERVERLINK" target="_blank">Join Our Discord</a>
+
+  <footer>© 2025 Torch Bot • All rights reserved.</footer>
+
+</body>
+</html>
