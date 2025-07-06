@@ -1,48 +1,250 @@
-<div style="width: 1440px; height: 960px; position: relative; background: white">
-  <div style="width: 1440px; height: 900px; left: 0px; top: 60px; position: absolute; background: #0066CB">
-    <div style="width: 1440px; height: 900px; left: 0px; top: 0px; position: absolute; overflow: hidden">
-      <img style="width: 1595px; height: 949px; left: -60px; top: -24px; position: absolute" src="https://placehold.co/1595x949" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  background-color: var(--primary-blue);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 9px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-name {
+  color: var(--text-light);
+  font-size: 19.2px;
+  font-weight: 700;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 45px;
+}
+
+.main-nav a {
+  color: var(--text-light);
+  font-size: 17.6px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Header */
+@media (max-width: 1200px) {
+    .main-nav {
+        display: none; /* Hiding nav for simplicity, a hamburger menu would be ideal */
+    }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .brand-name {
+      display: none;
+  }
+  .site-header .btn-primary {
+      width: 100%;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+  position: relative;
+  background-image: url('images/0a996495cb78978b706da7c006bcd611afd823d4.png');
+  background-size: cover;
+  background-position: center;
+  padding: 129px 0;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue-overlay);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1 1 55%;
+  color: var(--text-white);
+}
+
+.hero-title {
+  font-size: 67.2px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 5px 0;
+}
+
+.hero-subtitle {
+  font-size: 19.2px;
+  line-height: 1.5;
+  margin: 0 0 26px 0;
+  max-width: 530px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-link {
+  color: var(--light-blue-link);
+  font-size: 17.6px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.hero-link:hover {
+    opacity: 0.8;
+}
+
+.hero-image-container {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 628px;
+  height: auto;
+}
+
+/* Responsive Hero */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+  }
+  .hero-image-container {
+    order: 1;
+    margin-bottom: 40px;
+  }
+  .hero-logo {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .hero-actions .btn {
+      width: 80%;
+  }
+  .hero-logo {
+    max-width: 300px;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header id="header" class="site-header">
+  <div class="container header-container">
+    <a href="#" class="brand">
+      <img src="images/4f41ecbf4679492090b385389103d5710b3cc244.png" alt="Alaska State Roleplay Logo" class="brand-logo">
+      <span class="brand-name">Alaska State Roleplay</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Apply</a></li>
+        <li><a href="#">Quick Join</a></li>
+        <li><a href="#">Appeal</a></li>
+        <li><a href="#">Roblox Group</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="btn btn-primary">Discord Server</a>
+  </div>
+</header>
+<section id="hero" class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Alaska State<br>Roleplay (ASRP)
+      </h1>
+      <p class="hero-subtitle">
+        Alaska State Roleplay is a roleplay server based on the game ERLC, Roblox. We give our best effort, join now! 😉
+      </p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary">Discord Server</a>
+        <a href="#" class="hero-link">Quick Join ></a>
+      </div>
     </div>
-    <div style="width: 1440px; height: 900px; left: 0px; top: 0px; position: absolute; opacity: 0.80; background: #00226B"></div>
-    <img style="width: 628px; height: 628px; left: 736px; top: 136px; position: absolute" src="https://placehold.co/628x628" />
-    <div style="width: 388.95px; height: 171.92px; left: 108px; top: 285.89px; position: absolute">
-      <div style="width: 389.30px; height: 97px; left: 0px; top: 0px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 67.20px; font-family: Jost; font-weight: 700; line-height: 73.92px; word-wrap: break-word">Alaska State</div>
-      <div style="width: 715px; height: 97px; left: 0px; top: 75.11px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 67.20px; font-family: Jost; font-weight: 700; line-height: 73.92px; word-wrap: break-word">Roleplay (ASRP)</div>
-    </div>
-    <div style="width: 530.18px; height: 56.80px; left: 108px; top: 462.73px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 19.20px; font-family: Jost; font-weight: 400; line-height: 28.80px; word-wrap: break-word">Alaska State Roleplay is a roleplay server based on the game ERLC, Roblox. We give our best effort, join now! 😉</div>
-    <div style="width: 159.83px; height: 47.58px; left: 108px; top: 545.92px; position: absolute; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20); border-radius: 22px; outline: 1px white solid; outline-offset: -1px">
-      <div style="width: 119.84px; height: 26px; left: 20.19px; top: 10.60px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: black; font-size: 17.60px; font-family: Jost; font-weight: 600; line-height: 26.40px; word-wrap: break-word">Discord Server</div>
-    </div>
-    <div style="width: 139.64px; height: 47.58px; left: 287.02px; top: 545.92px; position: absolute; border-radius: 4px">
-      <div style="width: 99.62px; height: 26px; left: 20.18px; top: 10.60px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: #47B5ED; font-size: 17.60px; font-family: Jost; font-weight: 600; line-height: 26.40px; word-wrap: break-word">Quick Join ></div>
+    <div class="hero-image-container">
+      <img src="images/4f41ecbf4679492090b385389103d5710b3cc244.png" alt="Large Deer Logo" class="hero-logo">
     </div>
   </div>
-  <div style="width: 1440px; height: 60px; left: 0px; top: 0px; position: absolute; background: #0066CB"></div>
-  <div style="width: 1440px; height: 67.77px; left: 0px; top: 0px; position: absolute; background: #0051FF; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.10); border-radius: 1px">
-    <div style="width: 242.02px; height: 60px; left: 48px; top: 3.38px; position: absolute">
-      <div style="width: 40px; height: 40px; left: 0px; top: 10px; position: absolute">
-        <img style="width: 40px; height: 40px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/40x40" />
-      </div>
-      <div style="width: 194.02px; height: 19.20px; left: 48px; top: 20.39px; position: absolute">
-        <div style="width: 194.37px; height: 28px; left: 0px; top: -5px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #FAFAFA; font-size: 19.20px; font-family: Jost; font-weight: 700; line-height: 19.20px; word-wrap: break-word">Alaska State Roleplay</div>
-      </div>
-    </div>
-    <div style="width: 479.78px; height: 49.86px; left: 733.20px; top: 8.45px; position: absolute">
-      <div style="width: 56.03px; height: 26.39px; left: 17.60px; top: 11.74px; position: absolute">
-        <div style="width: 45.84px; height: 26px; left: 5.26px; top: 0px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: #FAFAFA; font-size: 17.60px; font-family: Jost; font-weight: 500; line-height: 26.40px; word-wrap: break-word">Apply</div>
-      </div>
-      <div style="width: 73.53px; height: 26.39px; left: 108.82px; top: 11.74px; position: absolute">
-        <div style="width: 111px; height: 26px; left: -12.02px; top: -0.19px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: #FAFAFA; font-size: 17.60px; font-family: Jost; font-weight: 500; line-height: 26.40px; word-wrap: break-word">Quick Join</div>
-      </div>
-      <div style="width: 90.75px; height: 26.39px; left: 217.53px; top: 11.74px; position: absolute">
-        <div style="width: 80.54px; height: 26px; left: 5.27px; top: 0px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: #FAFAFA; font-size: 17.60px; font-family: Jost; font-weight: 500; line-height: 26.40px; word-wrap: break-word">Appeal</div>
-      </div>
-      <div style="width: 118.72px; height: 26.39px; left: 343.47px; top: 11.74px; position: absolute">
-        <div style="width: 108.56px; height: 26px; left: 5.27px; top: 0px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: #FAFAFA; font-size: 17.60px; font-family: Jost; font-weight: 500; line-height: 26.40px; word-wrap: break-word">Roblox Group</div>
-      </div>
-    </div>
-    <div style="width: 159.83px; height: 47.58px; left: 1222.58px; top: 9.59px; position: absolute; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20); border-radius: 22px; outline: 1px white solid; outline-offset: -1px">
-      <div style="width: 119.84px; height: 26px; left: 20.19px; top: 10.60px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: black; font-size: 17.60px; font-family: Jost; font-weight: 600; line-height: 26.40px; word-wrap: break-word">Discord Server</div>
-    </div>
-  </div>
-</div>
+</section>
+</body>
+</html>
